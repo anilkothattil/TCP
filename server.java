@@ -1,3 +1,6 @@
-public static void main
-system
-sys
+public static void main()
+
+{
+
+}
+
