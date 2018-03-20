@@ -10,4 +10,12 @@ public class WishesClient
 	InetAddress ip=sock.getInetAddress();
 	System.out.println(ip);       
      String message1 = "Accept Best Wishes, Server";
- 
+
+     OutputStream ostream = sock.getOutputStream();                 
+     DataOutputStream dos = new DataOutputStream(ostream);
+     dos.writeBytes(message1);                                                         
+     dos.close();                            
+     ostream.close();   
+     sock.close();
+  }
+}
