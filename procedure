@@ -1,0 +1,169 @@
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~$ cd TCPgit
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/TCPgit$ git init
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/TCPgit$ git remote add tc https://github.com/anilkothattil/TCP.git
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/TCPgit$ git pull tc master
+
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/TCPgit$ git add .
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/TCPgit$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   client.java
+
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/TCPgit$ git commit -m "new file added"
+[master 5096009] new file added
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 client.java
+
+
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/TCPgit$ git push tc master
+Username for 'https://github.com': anilagraceprakash
+Password for 'https://anilagraceprakash@github.com': 
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 334 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/anilkothattil/TCP.git
+   98eb45e..5096009  master -> master
+
+
+
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/TCPgit$ git add .
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/TCPgit$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   client.java
+
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/TCPgit$ git commit -m "new file added"
+[master 7aedd4f] new file added
+ 1 file changed, 4 insertions(+)
+
+
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/TCPgit$ git push tc master
+Username for 'https://github.com': anilagraceprakash
+Password for 'https://anilagraceprakash@github.com': 
+To https://github.com/anilkothattil/TCP.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/anilkothattil/TCP.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+
+
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/TCPgit$ git pull tc master
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/anilkothattil/TCP
+ * branch            master     -> FETCH_HEAD
+   5096009..31ff69e  master     -> tc/master
+Merge made by the 'recursive' strategy.
+ server.java | 7 +++++++
+ 1 file changed, 7 insertions(+)
+
+
+
+
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/TCPgit$ git push tc master
+Username for 'https://github.com': anilagraceprakash
+Password for 'https://anilagraceprakash@github.com': 
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 568 bytes | 0 bytes/s, done.
+Total 5 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/anilkothattil/TCP.git
+   31ff69e..a232ec3  master -> master
+
+
+
+
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/TCPgit$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   client.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+
+
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/TCPgit$ git add .
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/TCPgit$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   client.java
+
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/TCPgit$ git commit -m "added"
+[master cd603a3] added
+ 1 file changed, 9 insertions(+)
+
+
+
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/TCPgit$ git push tc master
+Username for 'https://github.com': anilagraceprakash
+Password for 'https://anilagraceprakash@github.com': 
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 474 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/anilkothattil/TCP.git
+   a232ec3..cd603a3  master -> master
+
+
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/TCPgit$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   client.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/TCPgit$ git add .
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/TCPgit$ git commit -m "added"
+[master d5a8509] added
+ 1 file changed, 9 insertions(+), 1 deletion(-)
+
+
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/TCPgit$ git status
+On branch master
+nothing to commit, working directory clean
+
+
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/TCPgit$ git push tc master
+Username for 'https://github.com': anilagraceprakash
+Password for 'https://anilagraceprakash@github.com': 
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 549 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/anilkothattil/TCP.git
+   cd603a3..d5a8509  master -> master
+
+
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/TCPgit$ git pull tc master
+From https://github.com/anilkothattil/TCP
+ * branch            master     -> FETCH_HEAD
+Already up-to-date.
+mca@mca-HP-Compaq-8200-Elite-MT-PC:~/TCPgit$ 
+
