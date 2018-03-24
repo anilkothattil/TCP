@@ -1,7 +1,7 @@
 import java.net.*; 
-import java.io.OutputStream;
+import java.io.*;
 
-class WishesClient
+class Client
 {
    public static void main(String args[]) throws Exception
    {
@@ -17,6 +17,12 @@ class WishesClient
      while(!str.equals("stop"))
      {
       str=br.readLine();
-     
+      dout.writeUTF(str);
+      dout.flush();
+      str2=din.readUTF();
+      System.out.println("Server says: "+str2);
+     }
+     dout.close();
+     sock.close();
   }
 }
